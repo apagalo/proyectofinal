@@ -1,0 +1,308 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+
+header {
+  width: 100%;
+  min-height: 200px;
+  min-width: 102px;
+  padding: 0;
+  margin: 0;
+  background-color: #17181D;
+  display: flex;
+  justify-content: space-between; /* se separen a cada esquina */
+  align-items: center;
+}
+
+header img {
+  float: left;
+  height: 100px;
+  width: 100px;
+  margin-left: 20%;
+  padding: 20px 20px;
+}
+
+header nav {
+  float: left;
+  margin: 30px 20px;
+}
+
+header > nav > ul > li {
+  float: left;
+  display: block; /* Convertimos los elementos a en elementos bloque para manipular el padding */
+  padding: 35px 50px; /* alto - ancho */
+  text-decoration: none; /* Se le quita el guión bajo */
+  list-style-type: none;
+  font-family:Verdana, Geneva, Tahoma, sans-serif, Courier, monospace;
+  font-size: 18px;
+  float: left;
+  background-color: #17181D; 
+  color: #FCD9B8; /* color de letra */ 
+}
+
+nav {
+  float: left; /* Desplazamos el nav hacia la izquierda */
+}
+
+nav ul {
+  
+  list-style: none;
+  overflow: hidden; /* Limpiamos errores de float */
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+nav ul li {
+  float: left;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+nav ul li a {
+  display: flex; /* Convertimos los elementos a en elementos bloque para manipular el padding */
+  
+  text-align: center;
+  text-decoration: none; /* Se le quita el guión bajo */
+  font-size: 16px;
+  float: left;
+  width: 100%;
+  color: #FCD9B8; /* color de letra */
+    
+}
+
+nav ul li a:hover {
+  background: #D2A87E;
+  color: #17181D;
+}
+
+h1 {
+  color: #17181D;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Dancing Script', cursive;
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 24px;
+  font-style: italic;
+}
+
+p {
+  line-height: 28px;
+}
+
+
+
+section {
+  
+  min-height: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.primerbloque{
+  min-height: 300px;
+  width: 100%;
+  height: 700px;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./restaurante\ foto.jpeg);
+  display: flex;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  
+}
+
+.segundobloque{
+  display: flex;
+  background-color: #D2A87E;
+}
+
+.quienessomos {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size:20px;
+  color: #814827;
+  background-color: #D2A87E;
+  text-align-last: center;
+}
+
+.fotochef {
+  background-color: #D2A87E;
+  width: 100%;
+}
+
+body {
+  padding: 50px;
+  color: #D0B49F;
+  font-family:Verdana, Geneva, Tahoma, sans-serif, Courier, monospace;
+  font-size: 14px;
+}
+
+.primerbloque{
+  min-height: 300px;
+  width: 100%;
+  height: 600px;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./restaurante\ foto.jpeg);
+  display: flex;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 30px;
+}
+
+.segundobloque{
+  display: flex;
+  background-color: #D2A87E;
+}
+
+
+.quienessomos {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size:20px;
+  color: #814827;
+  background-color: #D2A87E;
+  text-align-last: center;
+}
+
+.fotochef {
+  background-color: #D2A87E;
+  width: 100%;
+}
+
+.tercerbloque {
+  width: 100%;
+  display: flex;
+  max-width: 1100pm;
+}
+
+.card {
+  width: 100%;
+  margin: 20px;
+  border-radius: 6px; /* imagen un poco redondeada */
+  overflow: hidden;/* ocultar lo que está fuera de la imagen */
+  background: #17181D;
+  box-shadow: 0px 1px 10px rgba(0,0,0,0,2); /* sombra ligera de la caja */
+  cursor: default; /* cursor no se vea como word, para escribir, sino el click */
+  transition: all 400ms ease; 
+
+}
+
+.card:hover{
+  box-shadow: 5px 5px 20px rgba(0,0,0,0,4);
+  transform: translateY(-3%); /* cuando cursor esté encima saltará un 3% de su sitio */
+}
+
+.card img{
+  height: 100px;
+  float: left;
+  width: 100px;
+  margin: 20px 20px;
+  padding: 10px 10px;
+}
+
+.card .contenido{
+  padding: 15px;
+  text-align: center;
+}
+
+.card .contenido p{
+ line-height: 1.5;
+}
+
+.card .contenido h3{
+  font-weight: 400;
+  margin-bottom: 15px; /*espacio entre el título y el párrafo*/
+  font-weight: bolds;
+}
+
+.card .contenido a{
+  text-decoration: none; /*espacio entre el título y el párrafo*/
+  display: inline-block;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 4px;
+  color: #D0B49F;
+  border: 1px solid #D0B49F;
+  margin-bottom: 30px;
+}
+
+.card .contenido a:hover{
+  background-color: #D0B49F;
+  color: #17181D;
+}
+
+footer {
+  background-color: #17181D;
+  display: flex;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+
+.copyright {
+  margin-top:14px;
+  margin-bottom:0;
+  font-size:13px;
+  opacity:0.6;
+}
+
+.registro {
+width: 400px;
+background: #17181D;
+padding: 30px;
+margin: auto;
+margin-top:0px;
+border-radius: 4px;
+font-family: calibri;
+color: #D0B49F;
+line-height: 40px;
+}
+
+.registro-etiqueta{
+font-size: 18px;
+margin-bottom: 20px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.registro-caja{
+  width: 100%;
+  margin-bottom: 16px;
+  background-color: #17181D;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #D0B49F;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 16px;
+  
+
+}
+
+.textoderegistro{
+  font-size: 17px;
+  margin-bottom: 10px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.registro-boton{
+  width: 100%;
+  background-color: #292C35;
+  border: none;
+  padding: 12px;
+  color: #D0B49F;
+  margin: 16px 0;
+  font-size: 16px;
+}
